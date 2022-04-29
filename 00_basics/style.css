@@ -1,9 +1,4 @@
 
-
-.container {
-  display: flex;
-}
-
 .indian-red {
   background: #cd5c5c;
 }
@@ -39,4 +34,7 @@
 .container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  height:100vh;
+  align-items: flex-start;
 }
