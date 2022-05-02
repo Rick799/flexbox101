@@ -1,25 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: rosybrown;
+  background-color: lightgoldenrodyellow;
 }
 
-.albums {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 20px;
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: stretch; */
+  text-align: center;
 }
 
-.album {
-  background-color: cadetblue;
-  box-shadow: 0 0 5px brown;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  grid-gap: 10px;
-  align-items: center;
-  color: white;
-  font-weight: 100;
+.marvel {
+  flex: 1 1 200px;
+  margin: 10px;
+  box-shadow: 2px 4px 6px 2px;
+  background-color: thistle;
 }
 
-.album__artwork {
-  width: 100%;
+p {
+  padding: 10px;
+
+}
+
+button {
+  background-color: blanchedalmond;
+  width: 90%;
+  padding: 7px;
 }
