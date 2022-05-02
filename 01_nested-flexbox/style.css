@@ -2,27 +2,39 @@
     box-sizing: border-box;
 }
 
-.container {
-    display: flex;
+body {
+    min-height: 100vh;
+    margin: 0;
 }
 
-.container div {
-    flex: 1;
-    font-size: 5vw;
-    padding: 0.5em;
-    color: white;
-}
-
-.red {
-    background-color: orangered;
-    display: flex;
-    flex-direction: column;
-}
-
-.green {
+header,
+footer {
     background-color: yellowgreen;
+    height: 20vh;
 }
 
-.blue {
-    background-color: steelblue;
+header,
+footer,
+.nav,
+.aside,
+.article {
+    padding: .5em;
+}
+
+.article {
+    flex: 1;
+}
+
+.main {
+    display: flex;
+}
+
+.nav,
+.aside {
+    background-color: bisque;
+    flex: 0 0 20vw;
+}
+
+.main {
+    min-height: calc(100vh - 40vh);
 }
