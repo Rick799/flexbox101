@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+.container div {
+    flex: 1;
+    font-size: 5vw;
+    padding: 0.5em;
+    color: white;
+}
+
+.red {
+    background-color: orangered;
+    display: flex;
+    flex-direction: column;
+}
+
+.green {
+    background-color: yellowgreen;
+}
+
+.blue {
+    background-color: steelblue;
+}
