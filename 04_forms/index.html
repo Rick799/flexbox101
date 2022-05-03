@@ -9,19 +9,43 @@
   </head>
   <body>
     <form action="submit">
-      <div class="message">
-        <label for="msg">Message</label>
-        <textarea name="msg" id="msg"></textarea>
+      <div class="container">
+        <div class="contact">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+          <label for="phone">Phone</label>
+          <input type="number" name="phone" id="phone" />
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" />
+          <label for="date">Pickup Date/Time</label>
+          <input type="datetime-local" name="date" id="date" />
+          <label for="pick">Pickup Place</label>
+          <select id="dropdown" name="occupation" required>
+            <option>Select any one</option>
+            <!-- <option value="Full-time-employment">Select any one</option> -->
+          </select>
+          <br />
+          <label for="drop">Dropoff Place</label>
+          <input type="text" name="drop" id="drop" />
+        </div>
+        <div class="radio">
+          <p><b>Which taxi do you require?</b></p>
+          <input type="radio" name="car" id="car" />
+          <label for="car">Car</label><br />
+          <input type="radio" name="van" id="van" />
+          <label for="van">Van</label><br />
+          <input type="radio" name="tuk" id="tuk" />
+          <label for="tuk">Tuk Tuk</label><br />
+          <p><b>Extras:</b></p>
+          <input type="checkbox" name="baby" id="baby" />
+          <label for="baby">Baby Seat</label><br />
+          <input type="checkbox" name="wheel" id="wheel" />
+          <label for="wheel">Wheelchair Access</label><br />
+          <input type="checkbox" name="stock" id="stock" />
+          <label for="stock">Stock Tip</label><br />
+        </div>
       </div>
-      <div class="contact">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" />
-        <label for="townborn">Town you where born</label>
-        <input type="text" name="townborn" id="townborn" />
-        <label for="email">Email Address</label>
-        <input type="email" name="email" id="email" />
-        <button>Submit</button>
-      </div>
+      <button class="btn">Submit Booking</button>
     </form>
   </body>
 </html>
