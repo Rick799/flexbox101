@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 50vh;
+
+}
+
+.container>div {
+  background-color: blanchedalmond;
+  border: 3px solid rgb(85, 87, 90);
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.container>div:nth-child(odd) {
+  width: 10%;
+}
+
+.container>div:nth-child(even) {
+  width: 20%;
+}
+
+.container>div:nth-child(2),
+.container>div:nth-child(4),
+.container>div:nth-child(9) {
+  width: 60%;
+}
