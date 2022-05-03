@@ -8,141 +8,79 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <h1 id="title">PUBG Survey Form</h1>
-      <p id="description">
-        Thank you for taking the time to help us improve your gaming experience
-      </p>
-      <form id="survey-form">
-        <div>
-          <label id="name-label" for="name">Name</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter your name"
-            required
-          />
-        </div>
-        <br />
-        <div>
-          <label id="email-label" for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your Email"
-            required
-          />
-        </div>
-        <br />
-        <div>
-          <label id="number-label" for="number">Age</label>
-          <input
-            type="number"
-            name="age"
-            id="number"
-            min="18"
-            max="90"
-            placeholder="Age"
-          />
-        </div>
-        <br />
-        <div>
-          <p>Which option best describes your current occupation</p>
-          <select id="dropdown" name="occupation" required>
-            <option disabled selected value>
-              Select your current occupation
-            </option>
-            <option value="Full-time-employment">Full-time employment</option>
-            <option value="Part-time employment">Part-time employment</option>
-            <option value="Unemployed">Unemployed</option>
-            <option value="Student">Student</option>
-            <option value="preferNo">Prefer not to say</option>
-          </select>
-        </div>
-        <br />
-        <div>
-          <p>How many hours in a day do you spend playing PUBG</p>
-          <label>
-            <input
-              name="user-recommend"
-              value="30-minutes-to-1-hour"
-              type="radio"
-              checked
-            />30 minutes to 1 hour </label
-          ><br />
-          <label>
-            <input name="user-recommend" value="1-2-hours" type="radio" />1-2
-            hours </label
-          ><br />
-          <label>
-            <input
-              name="user-recommend"
-              value="more-than-2-hours"
-              type="radio"
-            />More than 2 hours
-          </label>
-        </div>
-        <br />
-        <div>
+    <main id="main">
+      <h1 id="title">Netaji Subhas Chandra Bose</h1>
+      <p>It is blood alone that can pay the price of freedom.</p>
+      <div id="img-div">
+        <img
+          id="image"
+          src="data:image/jpeg;base64,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"
+        />
+        <figcaption id="img-caption">
+          “Freedom is not given - it is taken”
+        </figcaption>
+      </div>
+      <section id="tribute-info">
+        <h3>Here we take a glimpse of Netaji's timeline:</h3>
+        <ul>
+          <li><strong>Jan 23, 1897</strong> - Subhas Chandra Bose is born</li>
+          <li>
+            <strong>Mar 29, 1911</strong> - Bose admitted to Presidency college
+          </li>
+          <li>
+            <strong>Mar 28, 1918</strong> - Recieves is B.A. in philosophy
+          </li>
+          <li>
+            <strong> Apr 24, 1919</strong> - Leaves India for Great Britain
+          </li>
+          <li><strong>May 29, 1919</strong> - Bose takes the ICS exam</li>
+          <li>
+            <strong>May 20, 1923</strong> - Elected leader of the All India
+            Youth Council and secretary of the Bengal State Congress
+          </li>
+          <li><strong>Sep 14, 1925</strong> - Bose is arrested</li>
+          <li>
+            <strong>Mar 30, 1927</strong> - Bose is released from prison and
+            began working with Nehru
+          </li>
+          <li>
+            <strong>May 28, 1930</strong> - Bose becomes mayor of Calcutta
+          </li>
+          <li>
+            <strong>Feb 28, 1938</strong> - Bose accepts nomination as the INC
+            presidential candidate
+          </li>
+          <li>
+            <strong>Oct 8, 1939</strong> - Bose organizes the All India Forward
+            Bloc
+          </li>
+          <li>
+            <strong>Jan 19, 1941</strong> - Bose escapes from India after it
+            becomesto hostile towards him
+          </li>
+          <li>
+            <strong>Aug 18, 1945</strong> - Subhas Chandra Bose dissapears
+          </li>
+        </ul>
+        <blockquote>
           <p>
-            Which type of firearm do you use most?
-            <span>(Check all that apply)</span>
+            "Inner religious explorations continued to be a part of his adult
+            life. This set him apart from the slowly growing number of atheistic
+            socialists and communists who dotted the Indian landscape."
           </p>
-        </div>
-        <div>
-          <label>
-            <input
-              name="prefer"
-              value="Assault-Rifles"
-              type="checkbox"
-            />Assault Rifles
-          </label>
-        </div>
-        <div>
-          <label>
-            <input name="prefer" value="LMGs" type="checkbox" />LMGs
-          </label>
-        </div>
-        <div>
-          <label>
-            <input name="prefer" value="SMGs" type="checkbox" />SMGs
-          </label>
-        </div>
-        <div>
-          <label>
-            <input name="prefer" value="Sniper-Rifles" type="checkbox" />Sniper
-            Rifles
-          </label>
-        </div>
-        <div>
-          <label>
-            <input name="prefer" value="Shotguns" type="checkbox" />Shotguns
-          </label>
-        </div>
-        <div>
-          <label>
-            <input name="prefer" value="Pistols" type="checkbox" />Pistols
-          </label>
-        </div>
-        <div>
-          <label>
-            <input name="prefer" value="Grenades" type="checkbox" />Grenades
-          </label>
-        </div>
-        <div>
-          <p>Any feedback you would like to share</p>
-          <textarea
-            id="comments"
-            name="comment"
-            placeholder="Enter your feedback here.."
-          ></textarea>
-        </div>
-        <div>
-          <button type="submit" id="submit">Submit</button>
-        </div>
-      </form>
-    </div>
+          <cite>-- Historian of South Asia Leonard Gordon</cite>
+        </blockquote>
+      </section>
+      <h3>
+        If you have time, you should read more about this incredible human being
+        on his
+      </h3>
+      <a
+        id="tribute-link"
+        href="https://www.britannica.com/biography/Subhas-Chandra-Bose"
+        target="_blank"
+        >Britannica Page</a
+      >
+    </main>
   </body>
 </html>
