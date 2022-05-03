@@ -11,15 +11,26 @@ body {
 
 nav {
   flex: 0 0 20vw;
-  background-color: lightblue;
+  background-color: lightslategrey;
 }
 
-header,
-footer,
-nav,
-aside,
+.col2 {
+  flex: 1;
+}
+
+main {
+  display: flex;
+
+}
+
 article {
-  padding: 0.4em;
+  height: calc(100vh - 40vh);
+  flex: 1
+}
+
+aside {
+  flex: 0 0 20vw;
+  background-color: lightgray;
 }
 
 header,
@@ -28,13 +39,10 @@ footer {
   height: 20vh;
 }
 
-.col2 {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-article {
-  flex: 1;
-  /* height: calc(100vh - 40vh); */
+header,
+footer,
+aside,
+article,
+nav {
+  padding: 0.4em;
 }
