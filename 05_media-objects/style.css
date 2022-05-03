@@ -5,16 +5,15 @@
 .main {
   display: flex;
   align-items: flex-start;
-  background: bisque;
+  background-color: blanchedalmond;
+  max-width: 25rem;
   padding: 15px;
-  border-radius: 3px;
-  max-width: 400px;
+  border-radius: 5px;
 }
 
-
-.icon {
-   margin-right: 15px;
-   font-size: 50px;
+img {
+  margin-left: 15px;
+  order: 1;
 }
 
 h3 {
