@@ -8,190 +8,117 @@
     <title>Document</title>
   </head>
   <body>
-    <nav id="navbar">
-      <header>CSS Documentation</header>
-      <ul>
-        <li><a class="nav-link" href="#Introduction">INTRODUCTION</a></li>
-        <li><a class="nav-link" href="#Syntax">SYNTAX</a></li>
-        <li><a class="nav-link" href="#Browser_Support">BROWSER SUPPORT</a></li>
-        <li><a class="nav-link" href="#Limitations">LIMITATIONS</a></li>
-        <li><a class="nav-link" href="#Reference">REFERENCE</a></li>
+    <nav id="navbar" class="nav">
+      <ul class="nav1">
+        <li><a href="#welcome">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <main id="main-doc">
-      <section class="main-section" id="Introduction">
-        <header>Introduction</header>
-        <article>
-          <p>
-            Cascading Style Sheets (CSS) is a style sheet language used for
-            describing the presentation of a document written in a markup
-            language such as HTML. CSS is a cornerstone technology of the World
-            Wide Web, alongside HTML and JavaScript.
-          </p>
-          <p>
-            CSS is designed to enable the separation of presentation and
-            content, including layout, colors, and fonts.[3] This separation can
-            improve content accessibility; provide more flexibility and control
-            in the specification of presentation characteristics; enable
-            multiple web pages to share formatting by specifying the relevant
-            CSS in a separate .css file, which reduces complexity and repetition
-            in the structural content; and enable the .css file to be cached to
-            improve the page load speed between the pages that share the file
-            and its formatting.
-          </p>
-          <ul>
-            <li>
-              Separation of formatting and content also makes it feasible to
-              present the same markup page in different styles for different
-              rendering methods, such as on-screen, in print, by voice (via
-              speech-based browser or screen reader), and on Braille-based
-              tactile devices. CSS also has rules for alternate formatting if
-              the content is accessed on a mobile device.
-            </li>
-            <li>
-              The CSS specifications are maintained by the World Wide Web
-              Consortium (W3C). Internet media type (MIME type) text/css is
-              registered for use with CSS by RFC 2318 (March 1998). The W3C
-              operates a free CSS validation service for CSS documents.
-            </li>
-          </ul>
-          <code>This is my first code element</code>
-        </article>
-      </section>
-      <section class="main-section" id="Syntax">
-        <header>Syntax</header>
-        <article>
-          <p>
-            The selector points to the HTML element you want to style. The
-            declaration block contains one or more declarations separated by
-            semicolons. Each declaration includes a CSS property name and a
-            value, separated by a colon. Multiple CSS declarations are separated
-            with semicolons, and declaration blocks are surrounded by curly
-            braces.
-          </p>
-          <ul>
-            <li>
-              <code>
-                p { <br />
-                color: red;<br />
-                text-align: center; <br />
-                }
-              </code>
-            </li>
 
-            <li>
-              Here, p is a selector in CSS (it points to the HTML element you
-              want to style). color is a property, and red is the property value
-              text-align is a property, and center is the property value
-            </li>
-          </ul>
-        </article>
-      </section>
-      <section class="main-section" id="Browser_Support">
-        <header>Browser Support</header>
-        <article>
-          <p>
-            Each web browser uses a layout engine to render web pages, and
-            support for CSS functionality is not consistent between them.
-            Because browsers do not parse CSS perfectly, multiple coding
-            techniques have been developed to target specific browsers with
-            workarounds (commonly known as CSS hacks or CSS filters). Adoption
-            of new functionality in CSS can be hindered by lack of support in
-            major browsers. For example, Internet Explorer was slow to add
-            support for many CSS 3 features, which slowed adoption of those
-            features and damaged the browser's reputation among developers.[62]
-            In order to ensure a consistent experience for their users, web
-            developers often test their sites across multiple operating systems,
-            browsers, and browser versions, increasing development time and
-            complexity. Tools such as BrowserStack have been built to reduce the
-            complexity of maintaining these environments.
-          </p>
-          <p>
-            In addition to these testing tools, many sites maintain lists of
-            browser support for specific CSS properties, including CanIUse and
-            the MDN Web Docs. Additionally, the CSS 3 defines feature queries,
-            which provide an @supports directive that will allow developers to
-            target browsers with support for certain functionality directly
-            within their CSS.[63] CSS that is not supported by older browsers
-            can also sometimes be patched in using JavaScript polyfills, which
-            are pieces of JavaScript code designed to make browsers behave
-            consistently. These workarounds—and the need to support fallback
-            functionality—can add complexity to development projects, and
-            consequently, companies frequently define a list of browser versions
-            that they will and will not support.
-          </p>
-          <p>
-            As websites adopt newer code standards that are incompatible with
-            older browsers, these browsers can be cut off from accessing many of
-            the resources on the web (sometimes intentionally).[64] Many of the
-            most popular sites on the internet are not just visually degraded on
-            older browsers due to poor CSS support, but do not work at all, in
-            large part due to the evolution of JavaScript and other web
-            technologies.
-          </p>
-          <code>This is my third code element</code>
-        </article>
-      </section>
+    <section id="welcome" class="welcome">
+      <h1>Hey I am Rick</h1>
+      <p>a web developer</p>
+    </section>
 
-      <section class="main-section" id="Limitations">
-        <header>Limitations</header>
-        <article>
-          <p>
-            Some noted limitations of the current capabilities of CSS include:
-          </p>
-          <ul>
-            <li>Selectors are unable to ascend</li>
-            <p>
-              CSS currently offers no way to select a parent or ancestor of an
-              element that satisfies certain criteria.[65] CSS Selectors Level
-              4, which is still in Working Draft status, proposes such a
-              selector,[66] but only as part of the complete "snapshot" selector
-              profile, not the fast "live" profile used in dynamic CSS
-              styling.[67] A more advanced selector scheme (such as XPath) would
-              enable more sophisticated style sheets. The major reasons for the
-              CSS Working Group previously rejecting proposals for parent
-              selectors are related to browser performance and incremental
-              rendering issues.
-            </p>
-            <li>
-              Cannot explicitly declare new scope independently of position
-            </li>
-            <p>
-              Scoping rules for properties such as z-index look for the closest
-              parent element with a position:absolute or position:relative
-              attribute. This odd coupling has undesired effects. For example,
-              it is impossible to avoid declaring a new scope when one is forced
-              to adjust an element's position, preventing one from using the
-              desired scope of a parent element.
-            </p>
-            <li>Cannot include styles from a rule into another rule</li>
-            <p>
-              CSS styles often must be duplicated in several rules to achieve a
-              desired effect, causing additional maintenance and requiring more
-              thorough testing. Some new CSS features were proposed to solve
-              this, but were abandoned afterwards.[70][71] Instead, authors may
-              gain this ability by using more sophisticated stylesheet languages
-              which compile to CSS, such as Sass, Less, or Stylus.
-            </p>
-          </ul>
-          <code>This is my fourth code element</code>
-        </article>
-      </section>
+    <section id="work" class="work">
+      <h2 class="work1">These are some of my projects</h2>
+      <div class="works">
+        <a
+          href="https://codepen.io/pen?template=MJjpwO"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+            alt="project"
+          />
+          <p class="project-title">Tribute Page</p>
+        </a>
+        <a
+          href="https://codepen.io/pen?template=MJjpwO"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+            alt="project"
+            alt="project"
+          />
+          <p class="project-title">Survey Form</p>
+        </a>
+        <a
+          href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
+            alt="project"
+          />
+          <p class="project-title">Product Landing Page</p>
+        </a>
+        <a
+          href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
+            alt="project"
+          />
+          <p class="project-title">Technical Documentation Page</p>
+        </a>
+      </div>
+    </section>
 
-      <section class="main-section" id="Reference">
-        <header>Reference</header>
-        <article>
-          <ul>
-            <li>
-              All the documentation in this page is taken from
-              <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"
-                >Wikipedia</a
-              >
-            </li>
-          </ul>
-          <code>This is my fifth code element</code>
-        </article>
-      </section>
-    </main>
+    <section id="contact" class="contact">
+      <div class="contact1">
+        <h2>Let's work together...</h2>
+        <p>What's your poison?</p>
+      </div>
+      <div class="contact2">
+        <a
+          href="https://www.facebook.com/raj.r.sarkar/p"
+          target="_blank"
+          class="btn contact-details"
+        >
+          Facebook</a
+        >
+        <a
+          href="https://github.com/freecodecamp"
+          target="_blank"
+          class="btn contact-details"
+        >
+          GitHub</a
+        >
+        <a
+          href="https://twitter.com/freecodecamp"
+          target="_blank"
+          class="btn contact-details"
+        >
+          Twitter</a
+        >
+        <a href="mailto:example@example.com" class="btn contact-details">
+          Send a mail</a
+        >
+        <a href="tel:555-555-5555" class="btn contact-details"> Call me</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        **This is just a fake portfolio. All the projects and contact details
+        given are not real.
+      </p>
+      <p>
+        &copy; Created for
+        <a href="https://nxt100.com/" target="_blank">nxt100_final </a>
+      </p>
+    </footer>
   </body>
 </html>
