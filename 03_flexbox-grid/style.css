@@ -1,18 +1,17 @@
-.container {
+.row {
   display: flex;
-  /* align-items: flex-start; */
-  /* flex-direction: column; */
-
 }
 
-.container {}
-
-.container>div {
-  font-size: 4vw;
-  color: white;
+.row>div {
+  font-size: 2em;
   background-color: lightcoral;
-  flex: 1;
-  padding: 0.2em;
-  border-radius: 3px;
   margin: 0.1em;
+  border-radius: 3px;
+  color: white;
+  padding: 0.2em;
+  flex: 1;
 }
+
+.row .row>div {
+  background-color: antiquewhite;
+  color: black
