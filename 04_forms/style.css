@@ -1,0 +1,30 @@
+.container {
+  list-style: none;
+  padding: 0;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5em;
+
+}
+
+.row>input {
+  flex: 2;
+
+}
+
+.row>label {
+  padding: 0.5em 1em 0.5em 0;
+  flex: 1;
+}
+
+.row>button {
+  background-color: gray;
+  padding: 0.5em;
+  border: 0;
+  color: white;
+}
