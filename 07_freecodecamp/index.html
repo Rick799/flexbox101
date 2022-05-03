@@ -4,7 +4,145 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1 id="title">PUBG Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve your gaming experience
+      </p>
+      <form id="survey-form">
+        <div>
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label id="number-label" for="number">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="18"
+            max="90"
+            placeholder="Age"
+          />
+        </div>
+        <br />
+        <div>
+          <p>Which option best describes your current occupation</p>
+          <select id="dropdown" name="occupation" required>
+            <option disabled selected value>
+              Select your current occupation
+            </option>
+            <option value="Full-time-employment">Full-time employment</option>
+            <option value="Part-time employment">Part-time employment</option>
+            <option value="Unemployed">Unemployed</option>
+            <option value="Student">Student</option>
+            <option value="preferNo">Prefer not to say</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <p>How many hours in a day do you spend playing PUBG</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="30-minutes-to-1-hour"
+              type="radio"
+              checked
+            />30 minutes to 1 hour </label
+          ><br />
+          <label>
+            <input name="user-recommend" value="1-2-hours" type="radio" />1-2
+            hours </label
+          ><br />
+          <label>
+            <input
+              name="user-recommend"
+              value="more-than-2-hours"
+              type="radio"
+            />More than 2 hours
+          </label>
+        </div>
+        <br />
+        <div>
+          <p>
+            Which type of firearm do you use most?
+            <span>(Check all that apply)</span>
+          </p>
+        </div>
+        <div>
+          <label>
+            <input
+              name="prefer"
+              value="Assault-Rifles"
+              type="checkbox"
+            />Assault Rifles
+          </label>
+        </div>
+        <div>
+          <label>
+            <input name="prefer" value="LMGs" type="checkbox" />LMGs
+          </label>
+        </div>
+        <div>
+          <label>
+            <input name="prefer" value="SMGs" type="checkbox" />SMGs
+          </label>
+        </div>
+        <div>
+          <label>
+            <input name="prefer" value="Sniper-Rifles" type="checkbox" />Sniper
+            Rifles
+          </label>
+        </div>
+        <div>
+          <label>
+            <input name="prefer" value="Shotguns" type="checkbox" />Shotguns
+          </label>
+        </div>
+        <div>
+          <label>
+            <input name="prefer" value="Pistols" type="checkbox" />Pistols
+          </label>
+        </div>
+        <div>
+          <label>
+            <input name="prefer" value="Grenades" type="checkbox" />Grenades
+          </label>
+        </div>
+        <div>
+          <p>Any feedback you would like to share</p>
+          <textarea
+            id="comments"
+            name="comment"
+            placeholder="Enter your feedback here.."
+          ></textarea>
+        </div>
+        <div>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
