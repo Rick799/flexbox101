@@ -1,13 +1,18 @@
-.row {
+.container {
   display: flex;
+  /* align-items: flex-start; */
+  /* flex-direction: column; */
+
 }
 
-.row>div {
-  font-size: 2em;
-  background-color: lightcoral;
-  margin: 0.1em;
-  border-radius: 3px;
+.container {}
+
+.container>div {
+  font-size: 4vw;
   color: white;
-  padding: 0.2em;
+  background-color: lightcoral;
   flex: 1;
+  padding: 0.2em;
+  border-radius: 3px;
+  margin: 0.1em;
 }
