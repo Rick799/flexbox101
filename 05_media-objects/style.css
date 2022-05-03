@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  background: bisque;
+  padding: 15px;
+  border-radius: 3px;
+  max-width: 400px;
+}
+
+
+.icon {
+   margin-right: 15px;
+   font-size: 50px;
+}
+
+h3 {
+  margin: 0 0 10px;
+}
