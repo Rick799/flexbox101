@@ -3,18 +3,15 @@
 }
 
 body {
+  margin: 0;
   font-size: 1.2em;
-}
-
-header,
-footer {
-  background-color: yellowgreen;
-  height: 20vh;
-}
-
-.main {
-  min-height: calc(100vh - 40vh);
   display: flex;
+  height: 100vh;
+}
+
+nav {
+  flex: 0 0 20vw;
+  background-color: lightblue;
 }
 
 header,
@@ -25,16 +22,19 @@ article {
   padding: 0.4em;
 }
 
-nav,
-aside {
-  background-color: bisque;
-  flex: 0 0 20vw;
+header,
+footer {
+  background-color: yellowgreen;
+  height: 20vh;
+}
+
+.col2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 article {
   flex: 1;
-}
-
-nav {
-  background-color: lightblue;
+  /* height: calc(100vh - 40vh); */
 }
