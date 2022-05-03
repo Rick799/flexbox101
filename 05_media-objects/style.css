@@ -4,17 +4,33 @@
 
 .main {
   display: flex;
-  flex-direction: row;
-  background-color: blanchedalmond;
+  flex-direction: column;
   padding: 15px;
-  border-radius: 5px;;
+  border-radius: 5px;
   max-width: 400px;
+  background-color: blanchedalmond;
 }
 
-.icon img {
-  margin-right: 15px;
+img {
+  height: 70px;
+  width: 70px;
 }
 
-h3 {
-  margin: 0 0 15px; 
+.content1,
+.content2 {
+  padding-left: 20px;
+}
+
+.one {
+  display: flex;
+}
+
+.two {
+  display: flex;
+  padding-left: 100px;
+}
+
+.icon1,
+.icon2 {
+  padding-top: 20px;
 }
