@@ -40,4 +40,13 @@ aside {
 
 article {
   flex: 1;
+  order: -1;
+}
+
+nav {
+  background-color: lightblue;
+}
+
+aside {
+  background-color: blanchedalmond;
 }
