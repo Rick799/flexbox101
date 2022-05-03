@@ -1,177 +1,60 @@
 * {
   box-sizing: border-box;
+  background-image: linear-gradient(to right blue, yellow);
 }
 
-body {
-  background-color: lightgrey;
+#navbar {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  border-right: 5px solid cadetblue;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-img {
-  width: 250px;
-  /* margin: 0; */
-
-}
-
-.container>.container1 {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-}
-
-nav>ul {
-  width: 40vw;
-  display: flex;
-  justify-content: space-around;
-  font-size: large;
-}
-
-
-.mail {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px;
-}
-
-.mail h2 {
-  font-size: 45px;
-  padding-bottom: 20px;
-}
-
-#email {
-  text-align: center;
-  padding: 10px 50px 10px 50px;
-  margin-bottom: 10px;
-}
-
-#form {
-  display: flex;
-  flex-direction: column;
-
-}
-
-#submit {
-  background-color: goldenrod;
-  color: black;
+  margin: 15px;
+  font-size: 30px;
   padding: 10px;
-  width: ;
-  margin: 10px 30px 10px 30px;
-}
-
-li {
-  list-style-type: none;
-}
-
-.features {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* white-space: nowrap; */
-}
-
-.features .path p {
-  font-size: 18px;
   font-style: italic;
-  margin-top: 0px;
 }
 
-.features .path {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  width: 20vw;
-}
-
-.video {
-  display: flex;
-  justify-content: center;
-  /* padding: 100px; */
-  margin: 50px;
-}
-
-.video>iframe {
-  width: 100%;
-  max-width: 600px;
-}
-
-.pricing {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-}
-
-.plans {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  /* background-color:aqua ; */
-  margin: 10px;
-  border: 2px solid black;
-  padding: 50px;
-}
-
-.plans>.plan1 {
-  font-size: 25px;
-  background-color: lightslategray;
-  width: 100%;
-  padding: 15px;
-  text-align: center;
-  /* margin: 0px; */
-}
-
-.plans>ul>li {
-  padding: 10px;
-  padding-right: 50px;
+#navbar>header {
+  font-weight: bolder;
   text-align: center;
 }
 
-.btn {
-  border: 1px solid brown;
-  /* margin: 15px; */
-  background-color: goldenrod;
-  padding: 10px;
-  width: 150px;
-  font-weight: bold;
-  font-size: 15px;
+#navbar ul {
+  padding: 0px;
 }
 
-@media (max-width: 800px) {
-  .pricing {
-    flex-direction: column;
-  }
+#navbar>ul>li {
+  border-top: 1.5px solid cadetblue;
+  list-style-type: none;
+  font-size: 20px;
 }
 
-footer {
-  margin-top: 30px;
-  background-color: #ddd;
+#navbar a {
+  display: flex;
+  padding: 30px;
+  color: cadetblue;
+  text-decoration: none;
+}
+
+#main-doc {
+  margin-left: 300px;
   padding: 20px;
 }
 
-footer>ul {
-  display: flex;
-  justify-content: center;
-}
-
-footer>ul>li {
+.main-section>article {
   font-size: 18px;
-  padding: 20px;
-  font-weight: bold;
+  margin: 20px;
+  color: dimgray;
 }
 
-footer>span {
-  display: flex;
-  justify-content: center;
-  padding-left: 40px;
+code {
+  display: block;
+  background-color: snow;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 15px;
 }
