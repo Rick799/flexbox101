@@ -1,32 +1,64 @@
-* {
-  box-sizing: border-box;
-}
 
-.container {
+.row {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  height: 50vh;
-
 }
 
-.container>div {
-  background-color: blanchedalmond;
-  border: 3px solid rgb(85, 87, 90);
-  margin: 5px;
-  border-radius: 10px;
+.row>div {
+  font-size: 2em;
+  background-color: lightcoral;
+  flex: 1;
+  border-radius: 5px;
+  padding: 0.2em;
+  color: white;
+  margin: 0.1em;
 }
 
-.container>div:nth-child(odd) {
-  width: 10%;
+.row:nth-child(2)>div:nth-child(1),
+.row:nth-child(12)>div:nth-child(2) {
+  flex: 1;
 }
 
-.container>div:nth-child(even) {
-  width: 20%;
+.row:nth-child(2)>div:nth-child(2),
+.row:nth-child(12)>div:nth-child(1) {
+  flex: 11;
 }
 
-.container>div:nth-child(2),
-.container>div:nth-child(4),
-.container>div:nth-child(9) {
-  width: 60%;
+.row:nth-child(3)>div:nth-child(1),
+.row:nth-child(11)>div:nth-child(2) {
+  flex: 2;
+}
+
+.row:nth-child(3)>div:nth-child(2),
+.row:nth-child(11)>div:nth-child(1) {
+  flex: 10;
+}
+
+.row:nth-child(4)>div:nth-child(1),
+.row:nth-child(10)>div:nth-child(2) {
+  flex: 3;
+}
+
+.row:nth-child(4)>div:nth-child(2),
+.row:nth-child(10)>div:nth-child(1) {
+  flex: 9;
+}
+
+.row:nth-child(5)>div:nth-child(1),
+.row:nth-child(9)>div:nth-child(2) {
+  flex: 4;
+}
+
+.row:nth-child(5)>div:nth-child(2),
+.row:nth-child(9)>div:nth-child(1) {
+  flex: 8;
+}
+
+.row:nth-child(6)>div:nth-child(1),
+.row:nth-child(8)>div:nth-child(2) {
+  flex: 5;
+}
+
+.row:nth-child(6)>div:nth-child(2),
+.row:nth-child(8)>div:nth-child(1) {
+  flex: 7;
 }
